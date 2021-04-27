@@ -45,7 +45,7 @@
 		"jsonwebtoken": "^8.1.0",
 		"minimist": "^1.2.5",
 		"npmlog": ">=2.0.0",
-		"redis": "^2.8.0",
+		"redis": "^3.1.1",
 		"rest-web-gui": "git+https://github.com/ma-ha/rest-web-ui.git"
 	},
 	"files": [
