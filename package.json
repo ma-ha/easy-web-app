@@ -41,7 +41,7 @@
 		"config": "^1.31.0",
 		"cookie-parser": "^1.4.5",
 		"express": "^4.17.1",
-		"js-yaml": "^3.14.0",
+		"js-yaml": "^3.14.1",
 		"jsonwebtoken": "^8.1.0",
 		"minimist": "^1.2.5",
 		"npmlog": ">=2.0.0",
@@ -63,7 +63,7 @@
 	"devDependencies": {
 		"express-jwt": "^6.0.0",
 		"express-jwt-authz": "^2.4.1",
-		"jwks-rsa": "^1.10.1",
+		"jwks-rsa": "^1.12.3",
 		"zombie": "^6.1.4"
 	}
 }

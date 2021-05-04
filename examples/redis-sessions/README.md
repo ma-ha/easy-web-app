@@ -8,7 +8,7 @@ There are 100 ways to use Redis, I propose to use a docker container in this exa
 
 1st time:
 
-    docker run --name redis -d -p 6379:6379 redis
+      
 
 others:
 
@@ -22,18 +22,18 @@ others:
 # Step 2: Start Server A
 
     cd examples/redis-sessions
-    node serverA.js
+    node server.js -A
 
 # Step 3: Start Server B
 
     cd examples/redis-sessions
-    node serverB.js
+    node server.js -B
 
 # Step 4: Test the sesssion sync
 
-1. Start session on server A: Open http://localhost:8001/ in browser
+1. Start session on server A: Open http://localhost:8001/securitydemo in browser
 2. Login as 'test1' (no password)
-3. Open server B in browser: http://localhost:8002/ 
+3. Open server B in browser: http://localhost:8002/securitydemo
 4. You should still be logged in as 'test1'
 5. Log out on server B
 6. Reload page on server A, session should be terminated here too

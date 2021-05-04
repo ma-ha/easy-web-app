@@ -1,4 +1,8 @@
 ## 2.9.4
+* fixed REDIS session sync scenario, ([see example](https://github.com/ma-ha/easy-web-app/blob/master/examples/redis-session))
+* security fixes: package dependencies
+
+## 2.9.4
 * table with `"height":"auto"`
 
 ## 2.9.1/2/3

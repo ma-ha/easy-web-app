@@ -1361,7 +1361,7 @@ gui.getUserNameFromReq = async function getUserNameFromReq( req ) {
         if ( gui.getUserNameForToken ) {
           userName = await gui.getUserNameForToken( token )
         } else {
-          userName = getUserIdFromReq( req )
+          userName = gui.getUserIdFromReq( req )
         }
       }
     }
