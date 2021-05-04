@@ -1,4 +1,4 @@
-## 2.9.4
+## 2.9.5
 * fixed REDIS session sync scenario, ([see example](https://github.com/ma-ha/easy-web-app/blob/master/examples/redis-session))
 * security fixes: package dependencies
 
