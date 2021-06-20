@@ -1,3 +1,10 @@
+## 2.9.7
+* openid token callback fix (for non Auth0 providers)
+
+## 2.9.6
+* local module extensions are no supported by `rest-web-ui` v2.9.2 
+  * TODO: provide example (there is one in the rest-web-ui test cases)
+
 ## 2.9.5
 * fixed REDIS session sync scenario, ([see example](https://github.com/ma-ha/easy-web-app/blob/master/examples/redis-session))
 * security fixes: package dependencies

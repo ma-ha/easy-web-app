@@ -17,6 +17,8 @@ Available view types:
 * Icons or icon rows with expands
 * Source code display
 
+Since v2.9.6 you can also host your own (private or customized) modules to implement your own view types or GUI functionality.
+
 Features:
 * Rich page haeder and footer
 * Flexible layout for multiple views on one page 
@@ -202,7 +204,7 @@ application security by confguration including
 * CSRF protection
 * click hijacking detection (user alert)
 * OAuth2 option for web services 
-* OpenID Connect option
+* OpenID Connect authentication (login redirect) option
 
 The [security example](https://github.com/ma-ha/easy-web-app/tree/master/examples/security) 
 shows how to write a secure web app in 100 LoC. 
