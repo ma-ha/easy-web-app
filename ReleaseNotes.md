@@ -1,3 +1,6 @@
+## 2.9.8
+* openid: remove tokens from URL after login
+
 ## 2.9.7
 * openid token callback fix (for non Auth0 providers)
 
