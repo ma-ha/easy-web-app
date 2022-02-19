@@ -1,3 +1,6 @@
+## 2.9.9
+* Security updates
+
 ## 2.9.8
 * openid: remove tokens from URL after login
 
