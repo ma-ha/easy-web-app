@@ -1,6 +1,6 @@
 {
 	"name": "easy-web-app",
-	"version": "2.9.9",
+	"version": "2.9.10",
 	"description": "Create web applications easily.",
 	"author": "ma-ha",
 	"license": "MIT",
@@ -58,8 +58,8 @@
 		"example": "examples"
 	},
 	"engines": {
-		"node": "^8.9.4",
-		"npm": "^5.6.0"
+		"node": ">=8.9.4",
+		"npm": ">=5.6.0"
 	},
 	"devDependencies": {
 		"express-jwt": "^6.0.0",
