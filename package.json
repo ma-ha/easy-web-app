@@ -42,7 +42,7 @@
 		"cookie-parser": "^1.4.5",
 		"express": "^4.17.1",
 		"js-yaml": "^3.14.1",
-		"jsonwebtoken": "^8.1.0",
+		"jsonwebtoken": "^9.0.0",
 		"minimist": "^1.2.5",
 		"npmlog": "^5.0.0",
 		"object-assign": "^4.1.1",
