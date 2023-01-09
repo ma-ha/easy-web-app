@@ -1,3 +1,6 @@
+## 2.9.11
+- dependency updates
+
 ## 2.9.10
 - table with additinal id key in links
 - fix engine versions
