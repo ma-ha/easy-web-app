@@ -1,6 +1,6 @@
 {
 	"name": "easy-web-app",
-	"version": "2.9.11",
+	"version": "2.9.12",
 	"description": "Create web applications easily.",
 	"author": "ma-ha",
 	"license": "MIT",
@@ -37,16 +37,16 @@
 		"url": "https://github.com/ma-ha/easy-web-app.git"
 	},
 	"dependencies": {
-		"body-parser": "^1.20.1",
-		"config": "^3.3.8",
+		"body-parser": "^1.20.2",
+		"config": "^3.3.11",
 		"cookie-parser": "^1.4.6",
 		"express": "^4.18.2",
 		"js-yaml": "^4.1.0",
-		"jsonwebtoken": "^9.0.0",
-		"minimist": "^1.2.7",
+		"jsonwebtoken": "^9.0.2",
+		"minimist": "^1.2.8",
 		"npmlog": "^7.0.1",
 		"object-assign": "^4.1.1",
-		"redis": "^4.5.1",
+		"redis": "^4.6.12",
 		"rest-web-gui": "git+https://github.com/ma-ha/rest-web-ui.git"
 	},
 	"files": [
@@ -64,7 +64,7 @@
 	"devDependencies": {
 		"express-jwt": "^8.3.0",
 		"express-jwt-authz": "^2.4.1",
-    "jwks-rsa": "^3.0.0",
-    "zombie": "^6.1.4"
+		"jwks-rsa": "^3.0.0",
+		"zombie": "^6.1.4"
 	}
 }

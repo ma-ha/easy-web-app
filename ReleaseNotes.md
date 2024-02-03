@@ -1,4 +1,8 @@
 ## 2.9.11
+- form: fix for checkbox setData 
+- dependency patches
+
+## 2.9.11
 - dependency updates
 
 ## 2.9.10
