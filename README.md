@@ -35,6 +35,9 @@ This is how it may look like:
 Have a look at the ["list" example](https://github.com/ma-ha/easy-web-app/tree/master/examples/list):
 ![list demo screen shot](https://github.com/ma-ha/easy-web-app/raw/master/examples/list/pong-list.png) 
 
+**Real World App Example**:
+Check out what it's capable to do in my [Low Code Data App](https://github.com/ma-ha/lowcode-data-app/).
+This includes OpenId connect authentication flow, an "Entity Diagram" extension, dynamic form and table generation, lot CSS hacks and more.
 
 Check out [docu on "rest-web-gui" GIT project](https://github.com/ma-ha/rest-web-ui/), 
 the [examples](https://github.com/ma-ha/easy-web-app/tree/master/examples/)
