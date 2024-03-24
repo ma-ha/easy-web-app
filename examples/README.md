@@ -58,3 +58,9 @@ Perhaps start here:
 
 # API Reference
 * [API Reference Page](https://github.com/ma-ha/easy-web-app/blob/master/API-Reference.md)
+
+# Custom Modules 
+
+You can write your own view types (or customize/extend existing ones):
+Example [code](https://github.com/ma-ha/rest-web-ui/tree/master/html/ext-module/mymediawiki) and
+[integration](https://github.com/ma-ha/rest-web-ui/blob/master/html/svc/layout/tests/extension/structure)

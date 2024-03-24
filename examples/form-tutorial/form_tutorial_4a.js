@@ -23,6 +23,7 @@ var formPlugInConfig = {
               { id: 'f03', label: 'E-Mail', type: 'email' },
               { id: 'f04', label: 'Date', type: 'date' },
               { id: 'f05', label: 'Check', type: 'checkbox' },
+              { id: 'f06', label: 'QR', type: 'text', qr: true },
             ]
           }
         ]

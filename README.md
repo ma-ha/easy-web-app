@@ -10,14 +10,14 @@ includes the [rest-web-gui](https://github.com/ma-ha/rest-web-ui) framework and 
 
 Focus is on **web applications** _(not simple web pages)_. 
 Available view types:
-* Forms, Tables, Lists, Trees, Histograms, Upload Files
+* Forms (incl. QR and barcode scanner), Tables, Lists, Trees, Histograms, File Upload
 * Content: Markdown (also as Wiki), WikiML via MediaWiki API, plain HTML views, RSS-/atom-feeds or help dialogs
 * I/O: control switches/drawer, gauges, graphs, LEDs, displays, ...
 * Maps: POIs, routes, traffic, ...
 * Icons or icon rows with expands
 * Source code display
 
-Since v2.9.6 you can also host your own (private or customized) modules to implement your own view types or GUI functionality.
+Since v2.9.6 you can also develop and host your own (private or customized) modules to implement your own view types or GUI functionality.
 
 Features:
 * Rich page haeder and footer
