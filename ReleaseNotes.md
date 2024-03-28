@@ -1,4 +1,7 @@
-## 2.10.0
+## 2.10.2
+- fix for fields with "-"
+
+## 2.10.0/1
 - Form: QR or barcode scanner  ([see example](https://github.com/ma-ha/easy-web-app/blob/master/examples/form-tutorial/form_tutorial_4a.js))
 
 ## 2.9.11/13
