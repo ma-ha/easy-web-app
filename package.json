@@ -1,6 +1,6 @@
 {
 	"name": "easy-web-app",
-	"version": "2.10.2",
+	"version": "2.12.0",
 	"description": "Create web applications easily.",
 	"author": "ma-ha",
 	"license": "MIT",
@@ -31,8 +31,8 @@
 		"desktop",
 		"front-end",
 		"framework",
-    "QR Code",
-    "Barcode"
+		"QR Code",
+		"Barcode"
 	],
 	"repository": {
 		"type": "git",

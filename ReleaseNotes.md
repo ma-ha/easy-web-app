@@ -1,3 +1,7 @@
+## 2.12.0 
+- upload with accept and default values
+  - see [example](https://github.com/ma-ha/easy-web-app/blob/master/examples/upload)
+
 ## 2.10.2
 - fix for fields with "-"
 

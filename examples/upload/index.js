@@ -15,9 +15,10 @@ gui.addView (
     height: '115px'
   },
   {
+    accept: '.txt,image/*', // accept is optional
     update: [ 'Files' ],
-    input: [
-      { id: 'name', label: 'Name' }
+    input: [ // inputs are optional
+      { id: 'name', label: 'Name', value:'filename' } // value is optional
     ]
   }
 )
