@@ -1,3 +1,6 @@
+## 2.12.2
+- fix table poll with "-" in name
+
 ## 2.12.0 
 - upload with accept and default values
   - see [example](https://github.com/ma-ha/easy-web-app/blob/master/examples/upload)
