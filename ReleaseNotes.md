@@ -1,3 +1,6 @@
+## 2.12.3
+- fix table button with empty label
+
 ## 2.12.2
 - fix table poll with "-" in name
 
