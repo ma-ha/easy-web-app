@@ -1,4 +1,4 @@
-## 2.12.4 
+## 2.12.5
 - form: support setData for date
 
 ## 2.12.3
