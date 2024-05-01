@@ -1,3 +1,6 @@
+## 2.12.4 
+- form: support setData for date
+
 ## 2.12.3
 - fix table button with empty label
 
