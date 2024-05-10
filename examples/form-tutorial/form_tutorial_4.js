@@ -50,7 +50,8 @@ var formPlugInConfig = {
               { id: 'f07', label: 'This is a "label"', type: 'label' },
               { id: 'f08a', label: 'Radio 1st', type: 'radio', name:'myRadio', value:'1st' },
               { id: 'f08b', type: 'radio', name:'myRadio', value:'2nd' }, // w/o explizit label: the value will get the label
-              { id: 'f09', label: 'This is a link', type: 'link', linkText: 'to same page ;-)', defaultVal:'index.html' }
+              { id: 'f09', label: 'This is a link', type: 'link', linkText: 'to same page ;-)', defaultVal:'index.html' },
+              { id: 'f10', label: 'Must 3 characters', type: 'text', required: true, regExp: "[A-Za-z]{3}"}
             ]
           }
         ]

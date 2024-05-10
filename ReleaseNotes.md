@@ -1,3 +1,6 @@
+## 2.12.6
+- form: regExp support
+
 ## 2.12.5
 - form: support setData for date
 
