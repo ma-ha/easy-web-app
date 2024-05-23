@@ -1,3 +1,6 @@
+## 2.12.7
+- Form: modalstatus
+
 ## 2.12.6
 - form: regExp support
 
