@@ -1,3 +1,6 @@
+## 2.12.8 
+- Form: dot in id to POST hierarchical objects
+
 ## 2.12.7
 - Form: modalstatus
 
