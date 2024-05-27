@@ -1308,7 +1308,16 @@ gui.getUserIdFromReq = async function getUserIdFromReq( req ) {
   // }
   try {
     if ( ! req.cookies ) { return null }
-    if ( req.cookies[ 'pong-security' ] ) {
+    if ( req.cookies[ 'pongSec2IdTkn' ] ) { 
+      // log.info( "UserIdFromReq: pongSec2JWT cookie ..." )
+      var tokenStr = req.cookies[ 'pongSec2IdTkn' ]
+      var token = jwt.decode( tokenStr, { complete: true }) || {}
+      if ( token.payload  &&  token.payload.name  &&  token.payload.name !== '' ) {
+        userId = token.payload.name
+      } else if ( token.payload  &&  token.payload.email ) {
+        userId = token.payload.email
+      }
+    } else if ( req.cookies[ 'pong-security' ] ) {
       // log.info( "UserIdFromReq: pong-security cookie ..." )
 
       var token = req.cookies[ 'pong-security' ]
@@ -1325,13 +1334,6 @@ gui.getUserIdFromReq = async function getUserIdFromReq( req ) {
             log.verbose( "UserIdFromReq: userId = "+gui.userTokens[ token ].userId+"  >>>> session expired" )
           }
         }
-      }
-    } else if ( req.cookies[ 'pongSec2IdTkn' ] ) { 
-      // log.info( "UserIdFromReq: pongSec2JWT cookie ..." )
-      var tokenStr = req.cookies[ 'pongSec2IdTkn' ]
-      var token = jwt.decode( tokenStr, { complete: true }) || {}
-      if ( token.payload  &&  token.payload.name ) {
-        userId = token.payload.name
       }
     } else if ( req.headers && req.headers.authorization ) {
       // log.info( "UserIdFromReq: authorization header ..." )

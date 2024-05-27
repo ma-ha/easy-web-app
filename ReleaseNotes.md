@@ -1,3 +1,8 @@
+## 2.13.0
+- Table: Sub tables (expand)
+- Cookie priority to fix OICD logins
+- OICD: Username will be email, if name is empty in Id Token
+
 ## 2.12.8 
 - Form: dot in id to POST hierarchical objects
 
