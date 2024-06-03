@@ -1,3 +1,6 @@
+## 2.13.1
+- sticky table head
+
 ## 2.13.0
 - Table: Sub tables (expand)
 - Cookie priority to fix OICD logins
