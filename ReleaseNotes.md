@@ -1,3 +1,7 @@
+## 2.13.2
+- Menu / nav-bar / sub menus: Optional HTML injection
+  - see [example](https://github.com/ma-ha/easy-web-app/blob/master/examples/menu-tabs)
+
 ## 2.13.1
 - sticky table head
 

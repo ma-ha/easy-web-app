@@ -57,7 +57,8 @@ describe(
       function() {
           this.browser.assert.success();
           this.browser.assert.text( '#navItem2', 'myMenu' );
-          this.browser.assert.text( '#navSubMenu2', 'Sub Page 1 42 Sub Page 2' );
+          this.browser.assert.text( '#navTab42Info', '42' );
+          this.browser.assert.text( '#navTabmyMenufoo2Html', 'Test: HTML injected for page 3' );
         }
     );  
     

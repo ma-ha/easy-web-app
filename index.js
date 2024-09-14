@@ -825,30 +825,40 @@ router.get(
               } else if ( layoutId == 'main' && gui.pages['main'].header.logo ) {
                 // not displayed, because header link
               } else {
-                var nav = {
+                let nav = {
                     'layout' : layoutId,
                     'label' : ( gui.pages[ layoutId ].navLabel ? 
                       gui.pages[ layoutId ].navLabel : gui.pages[ layoutId ].title )
                   }
+                if ( gui.pages[ layoutId ].navId ) {
+                  nav.id = gui.pages[ layoutId ].navId
+                } else {
+                  nav.id = layoutId.replace(/[\W_]+/g, '' )
+                }
+                if ( gui.pages[ layoutId ].navHTML ) {
+                  nav.html = gui.pages[ layoutId ].navHTML
+                }
                 if ( gui.pages[ layoutId ].info ) { nav.info =  gui.pages[ layoutId ].info } 
-                navTabs.push( nav )              
+                navTabs.push( nav )
               }
             }
           } else { // sub-menu
-            var subMenu = layoutId.substr( 0 , layoutId.indexOf( '/' ) )
+            let subMenu = layoutId.substring( 0 , layoutId.indexOf( '/' ) )
             if ( ! gui.pullDownMenu[ subMenu ] && subMenu != 'user' ) { // if this is not a pull down
               if ( ! subMenus[ subMenu ] ) { // first sub menu item creates menu
                 // ignore alternate mobile and tablet layouts
                 if ( layoutId.indexOf( '-m' ) != layoutId.length -2 && 
-                    layoutId.indexOf( '-t' ) != layoutId.length -2 ) {  	  
+                    layoutId.indexOf( '-t' ) != layoutId.length -2 ) {
                   if ( gui.authorize && ! await gui.authorize( userId, layoutId, req ) ) {
                     // not visible for this user
                   } else {
                     subMenus[ subMenu ] = navTabs.length
-                    navTabs.push( {
+                    let nav = {
                       label : subMenu,
                       menuItems: []
-                    } )
+                    } 
+                    nav.id = subMenu.replace(/[\W_]+/g, '' )
+                    navTabs.push( nav )
                   }
                 }
               }
@@ -857,11 +867,19 @@ router.get(
               } else if ( subMenu == 'user' ) {
                 //log.verbose( 'nav','hide user in nav tabs' )
               } else {
-                var nav = {
+                let nav = {
                     'layout' : layoutId,
                     'label' : ( gui.pages[ layoutId ].navLabel ? 
                       gui.pages[ layoutId ].navLabel : gui.pages[ layoutId ].title )
                   }
+                if ( gui.pages[ layoutId ].navId ) {
+                  nav.id = gui.pages[ layoutId ].navId 
+                } else {
+                  nav.id = layoutId.replace(/[\W_]+/g, '' )
+                }
+                if ( gui.pages[ layoutId ].navHTML ) {
+                  nav.html = gui.pages[ layoutId ].navHTML
+                }
                 if ( gui.pages[ layoutId ].info ) { 
                   nav.info =  gui.pages[ layoutId ].info
                   navTabs[ subMenus[ subMenu ] ].info = '!'
