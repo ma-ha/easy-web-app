@@ -5,9 +5,12 @@ var gui = require ( '../../' )
 
 // initialize the web app framework and a default main page
 var mainPage = gui.init ( 'Menu Demo' )
-mainPage.title = 'Page ABC' // replace default = "main"
+mainPage.title = 'Page ABCr' // replace default = "main"
 mainPage.addView ( { id : 'PageAbc' }, null )
 mainPage.navId = "Main"
+
+gui.navSubMenu = ['onMouseEnter']
+
 
 /** Add a 2nd page. */
 var page2 = gui.addPage( 'secondpage', 'Page XYZ',  { id:'PageXyz' }, null )
@@ -40,4 +43,4 @@ gui.addPage( 'user/settings', 'User Settings', { id:'UserSettings' }, null )
 var pageWithHtmlNav = gui.addPage( 'other-page', 'Other Page', { id:'Page4' } )
 pageWithHtmlNav.navHTML = '<a href="index.html?layout=other-page">Other...</a>'
 
-console.log( gui.pages )
+console.log( 'gui:', JSON.parse( JSON.stringify( gui ) ) )

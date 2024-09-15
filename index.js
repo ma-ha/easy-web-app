@@ -901,7 +901,11 @@ router.get(
   
       // show menu only, if it's more than one page
       if ( navTabs.length == 1 && ! Object.keys( gui.pullDownMenu ).length > 0 )  navTabs = [] 
-      res.json( { 'navigations' : navTabs } )
+      let menuCfg = { 'navigations' : navTabs }
+      if ( gui.navSubMenu ) {
+        menuCfg.subMenuConfiguration =  gui.navSubMenu
+      }
+      res.json( menuCfg )
     } catch ( exc ) {
       log.warn( 'easy-web-app /svc/nav', exc )
       res.json( { 'navigations' : [] } )
