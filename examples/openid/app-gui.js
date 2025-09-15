@@ -49,7 +49,7 @@ function setupSec( gui ) {
     
     resetPasswordURL  : 'svc/mock/sec/password',
     changePasswordURL : 'svc/mock/sec/password',
-    //registgerURL      : 'index.php?layout=tests/sec/register',
+    //registerURL      : 'index.php?layout=tests/sec/register',
     
     authDomain : cfg.AUTH_DOMAIN,
     clientId   : cfg.CLIENT_ID,

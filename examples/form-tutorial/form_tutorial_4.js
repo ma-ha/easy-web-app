@@ -25,6 +25,7 @@ var formPlugInConfig = {
                 options:[ {value:'ABC'}, {value:'XYZ'}, {value:'ZXY', disabled:true}, {value:'12345'} ] },
               { id: 'f01h', label: 'HTML-Header', type: 'text', request:'header', descr:'press F12 and look at network request header to verify' },
               { id: 'f02', label: 'Password', type: 'password' },
+              { id: "pwd1", label: "Secret",  type: "secret" },
               { id: 'f03', label: 'Hidden', type: 'text', hidden:true, value:'secret' },
               { id: 'f04', label: 'E-Mail', type: 'email' },
               { id: 'f05', label: 'Date', type: 'date' },

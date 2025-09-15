@@ -1,3 +1,8 @@
+## 2.14.0
+- Form: Secret input type with reveal button
+   - see [form tutorial example 4](https://github.com/ma-ha/easy-web-app/blob/master/examples/form-tutorial/form_tutorial_4.js)
+- security patches
+
 ## 2.13.5
 - Table/List: graph improvements
 

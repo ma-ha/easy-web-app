@@ -5,7 +5,7 @@ var Browser = require('zombie');
 var assert = require('assert');
 var app = null
 describe( 
-  'Table 2 example page', 
+  'Table expand example page', 
   function() {
   
     before( 

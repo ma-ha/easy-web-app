@@ -31,7 +31,7 @@ var formParser  = bodyParser.urlencoded( { extended: true } );
 var cookieParser = require( 'cookie-parser' )
 webservices.use( cookieParser() )
 
-// support external confugation
+// support external configuration
 var config = require( 'config' )
 if ( config.staging ) { log.info( 'Web GUI', 'config stage: '+config.staging ) }
 var cfg = {}
@@ -283,7 +283,7 @@ gui.dynamicNav = function dynamicNav( dynamicNavCallback ) {
 /** add new page to portal, navigation tabs included */
 gui.addPage = function addPage( pageId, title, viewDef, viewConfig  ) {
   if ( ! pageId ) {
-    log.warn( 'gui.addPage', 'pageID not defined propperly' );
+    log.warn( 'gui.addPage', 'pageID not defined properly' );
   } else if ( this.pages[ pageId ] ) {
     log.warn( 'gui.addPage', 'Page "' + pageId + '" already exists in GUI.' );
   } else {
@@ -644,7 +644,7 @@ router.get(
   } 
 );
 
-// enable to replace the static structure of header, rows and footer per request using calbacks
+// enable to replace the static structure of header, rows and footer per request using callbacks
 async function dynamicStructureCallbacks( pg, dynamicRowCallback, req, page ) {
   if ( gui.dynamicTitleCallback )  { // manipulate title on the fly
     try { 
@@ -919,11 +919,11 @@ router.get(
 
 /** first call switches on i18n, further calls add supported languages */
 gui.addLang = function addLang( langCode, translations ) {
-  var trnsl = {}
-  if ( translations ) { trnsl = translations } 
+  var aTranslation = {}
+  if ( translations ) { aTranslation = translations } 
   if ( ! this.lang ) {
     this.lang = { }
-    this.lang[ langCode ] = trnsl
+    this.lang[ langCode ] = aTranslation
     this.pages[ 'main' ].header.modules.push( 
         { 
           'id': 'LangSel', 'type': 'i18n'
@@ -931,7 +931,7 @@ gui.addLang = function addLang( langCode, translations ) {
         }
       ) 
   } else {
-    this.lang[ langCode ] = trnsl
+    this.lang[ langCode ] = aTranslation
     for (var i = 0; i < this.pages[ 'main' ].header.modules.length; i++) {
       var mod = this.pages[ 'main' ].header.modules[i]
       if ( mod.id == 'LangSel' ) {     
@@ -1140,6 +1140,7 @@ gui.enableSecurity = function enableBasicAuth( paramObj ) {
   if ( paramObj.resetPasswordURL ) gui.secParams.resetPasswordURL = paramObj.resetPasswordURL
   gui.secParams.loginPage = ( paramObj.loginPage ? paramObj.loginPage : 'main' )
   if ( paramObj.registgerURL ) gui.secParams.registgerURL = paramObj.registgerURL
+  if ( paramObj.registgerURL ) gui.secParams.registerURL = paramObj.registerURL
   gui.secParams.logoutPage = ( paramObj.logoutPage ? paramObj.logoutPage : 'main' )
   gui.secParams.logoutURL = ( paramObj.logoutURL ? paramObj.logoutURL : root+'/logout' )
   gui.secParams.sessionExpiredAlert = ( paramObj.sessionExpiredAlert ? paramObj.sessionExpiredAlert : false )
@@ -1311,11 +1312,11 @@ webservices.use( // inject CSRF token
 )
 
 gui.mkToken = function mkToken( len ) {
-  var chrs = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+  var charMap = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
   var token =''
   for ( var i = 0; i < len; i++ ) {
-    var iRnd = Math.floor( Math.random() * chrs.length )
-    token += chrs.substring( iRnd, iRnd+1 )
+    var iRnd = Math.floor( Math.random() * charMap.length )
+    token += charMap.substring( iRnd, iRnd+1 )
   }
   return token
 }
@@ -1414,10 +1415,10 @@ gui.getLoggedInUserId = function getLoggedInUserId( req ) {
 	}
 	return uid
 }
-var showUserIdReprecated = true
+var showUserIdDeprecated = true
 function WARNING_DEPRECATED_UserId_FUNCTION() {
-  if ( showUserIdReprecated ) {
-    showUserIdReprecated = false
+  if ( showUserIdDeprecated ) {
+    showUserIdDeprecated = false // show only once
     log.warn( 'DEPRECATED: gui.getUserId(req)', 'Use "await getUserIdFromReq()" instead' )
   }
 }

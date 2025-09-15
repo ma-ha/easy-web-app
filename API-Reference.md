@@ -170,7 +170,7 @@ Add [pong-security module](https://github.com/ma-ha/rest-web-ui/tree/master/html
 * `needLoginPage`: page id shown if unauthenticted user tries to request a protectd page, default is "main"  
 * `logoutURL`: request logout web service URL (POST), default is `/logout` 
 * `logoutPage`: page id to show after a successful logout, default is `main`
-* `registgerURL`: if you need a link to a registration page id, default is `null` 
+* `registerURL`: if you need a link to a registration page id, default is `null` 
 
 IMPORTANT: You need to implement 
 * `gui.authenticate = function( user, password, callback ){ ... callback( err, true/false [, true/false] ) }` and 
