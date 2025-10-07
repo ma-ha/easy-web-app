@@ -1,4 +1,4 @@
-## 2.15.0
+## 2.15.0/1
 - Burger menu (option), see [example](https://github.com/ma-ha/easy-web-app/blob/master/examples/menu-burger)
 
 ## 2.14.0/1

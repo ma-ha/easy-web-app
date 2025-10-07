@@ -198,9 +198,10 @@ gui.setDefaults = function setDefaults( options ) {
     }
     this.pages[ 'main' ].header.modules.push( navbar )
   }
-  if ( options && options.decor != 'none' ) {
-    this.pages[ 'main' ].decor = gui.decor
+  if ( options && options.decor && options.decor != 'none' ) {
+    this.pages[ 'main' ].decor = options.decor
   }
+
   
   return this.pages[ 'main' ]
 }
