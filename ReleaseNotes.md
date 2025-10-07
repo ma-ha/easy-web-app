@@ -1,3 +1,6 @@
+## 2.15.0
+- Burger menu (option), see [example](https://github.com/ma-ha/easy-web-app/blob/master/examples/menu-burger)
+
 ## 2.14.0/1
 - Form: Secret input type with reveal button
    - see [form tutorial example 4](https://github.com/ma-ha/easy-web-app/blob/master/examples/form-tutorial/form_tutorial_4.js)

@@ -193,6 +193,9 @@ gui.setDefaults = function setDefaults( options ) {
             confURL : navUrl
         }
       } 
+    if ( options?.burgerMenu ) {
+      navbar.param.burger = options.burgerMenu
+    }
     this.pages[ 'main' ].header.modules.push( navbar )
   }
   if ( options && options.decor != 'none' ) {
