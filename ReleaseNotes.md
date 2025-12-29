@@ -1,3 +1,8 @@
+## 2.16.0
+
+- hide buttons if value is `false`
+  - see [example](https://github.com/ma-ha/easy-web-app/blob/master/examples/table-expand)
+
 ## 2.15.0/1
 - Burger menu (option), see [example](https://github.com/ma-ha/easy-web-app/blob/master/examples/menu-burger)
 

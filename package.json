@@ -1,6 +1,6 @@
 {
 	"name": "easy-web-app",
-	"version": "2.15.1",
+	"version": "2.16.0",
 	"description": "Create web applications easily.",
 	"author": "ma-ha",
 	"license": "MIT",
@@ -48,7 +48,6 @@
 		"minimist": "^1.2.8",
 		"npmlog": "^7.0.1",
 		"object-assign": "^4.1.1",
-		"redis": "^4.6.12",
 		"rest-web-gui": "git+https://github.com/ma-ha/rest-web-ui.git"
 	},
 	"files": [
@@ -67,6 +66,7 @@
 		"express-jwt": "^8.3.0",
 		"express-jwt-authz": "^2.4.1",
 		"jwks-rsa": "^3.0.0",
+		"redis": "^4.6.12",
 		"zombie": "^6.1.4"
 	}
 }
