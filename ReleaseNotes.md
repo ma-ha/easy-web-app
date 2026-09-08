@@ -1,7 +1,13 @@
+## 2.16.1
+- package updates
+- rm "object-assign" package
+
 ## 2.16.0
 
 - hide buttons if value is `false`
   - see [example](https://github.com/ma-ha/easy-web-app/blob/master/examples/table-expand)
+- border decor img not included any more, pls copy from "rest-web-gui" html/img folder
+
 
 ## 2.15.0/1
 - Burger menu (option), see [example](https://github.com/ma-ha/easy-web-app/blob/master/examples/menu-burger)
