@@ -13,7 +13,9 @@ gui.getExpress().use( '/img-cust', express.static( __dirname + '/img-cust' ) )
 var mainPage = gui.init( 'List Demo', 8880 )
 mainPage.setTitle( 'List Demo' )
 mainPage.setPageWidth( '1200px' )
-  
+
+gui.getExpress().use( '/img', require('express').static( require('path').resolve(__dirname, '..') + '/img' ) )
+
 mainPage.addView( 
     { 
       id:'row1view', 

@@ -7,6 +7,8 @@ var log = require( 'npmlog' );
 var page = gui.init ()
 page.header.logoText = 'Tree + Histogram Example'
 
+gui.getExpress().use( '/img', require('express').static( require('path').resolve(__dirname, '..') + '/img' ) )
+
 // Split page into columns
 var columns = page.addColumnsRow( 'row3', '400px' )
 

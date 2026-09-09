@@ -1,6 +1,7 @@
 ## 2.16.1
 - package updates
 - rm "object-assign" package
+- examples again with decor and img
 
 ## 2.16.0
 

@@ -26,7 +26,7 @@ var formPlugInConfig = {
             type: 'checkbox', name:'polcies', value:'accepted',
             activate:["actionPost"] }, // <<< important
           { id: 'f00', type: 'reCAPTCHA', name:'accept', 
-            sitekey: 'LczUUgUAAAAAPAykoKVT7bsX0aWH33cbEJmg9Fw'}, // <<< important
+            sitekey: 'USE_YOUR_KEY'}, // <<< important
         ]} ]
       }
     ],

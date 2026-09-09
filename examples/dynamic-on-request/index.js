@@ -1,15 +1,18 @@
-/** Simple example: Create a web page with form */
+/** Example: Create page layout on the fly */
 
-const gui = require ( '../../' )       // stand alone: replace with  require( 'easy-web-app' )
+const gui = require( '../../' )       // stand alone: replace with  require( 'easy-web-app' )
 
 // initialize the web app framework and a default main page
-let page = gui.init ()
+let page = gui.init()
 page.header.logoText = 'Test: Dynamic on-the-fly page genaration'
+page.addView( { 'id':'row1view', 'title':'Row 1 View', 'height':'500px' } )
+
+gui.getExpress().use( '/img', require('express').static( require('path').resolve(__dirname, '..') + '/img' ) )
 
 // ============================================================================
 // 2nd page with a default view, should be overwritten by callback
 let dynamicPage = gui.addPage( 'dynamicPage', 'Dynamic', { id:'Page2' } )
-
+let pg2 = 
 // generate page structure per request
 dynamicPage.dynamicRow( ( staticRows, request, page ) => {
   return new Promise( ( resolve, reject ) => {
@@ -21,7 +24,7 @@ dynamicPage.dynamicRow( ( staticRows, request, page ) => {
       newRows.push({ 
         id: 'v'+i, rowId: 'v'+i, 
         title: 'Dynamic View '+i,
-        height: '100px', decor: 'decor',
+        height: '170px', decor: 'decor',
         resourceURL: 'none'
       })
   

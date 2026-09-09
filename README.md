@@ -1,6 +1,7 @@
 # Easy Web App
 Create web applications easily and reduce complexity.
 
+**Low-Code** Approach:
 **No GUI programming required!** The **Web GUI is defined by JSON**, static files or served via REST service.
 Create complex and full featured web GUIs incredibly fast just by configuration.  
 You focus on programming business logic (REST services). 

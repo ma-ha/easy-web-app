@@ -20,6 +20,8 @@ mainPage.title = 'Icon Navigation Demo'
 mainPage.header.logoText = 'Icon Navigation Demo'
 mainPage.header.modules = [] // removes nav-bar module
 
+gui.getExpress().use( '/img', require('express').static( require('path').resolve(__dirname, '..') + '/img' ) )
+
 var columns = mainPage.addColumnsRow( 'row3', '600px' )
 var nav = columns.addView( icons, iconNav )
 nav.decor = null

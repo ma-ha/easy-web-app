@@ -6,6 +6,8 @@ var gui = require ( '../../' )       // stand alone: replace with  require( 'eas
 var page = gui.init ()
 page.header.logoText = 'Test: Table edit columns on-the-fly'
 
+gui.getExpress().use( '/img', require('express').static( require('path').resolve(__dirname, '..') + '/img' ) )
+
 // add a view of type 'pong-easy-table' (= plug-in) 
 gui.addView ( 
   // view config
@@ -14,6 +16,7 @@ gui.addView (
     title : 'Table Demo (sorry, zoom is always a flower ;-)',
     type  : 'pong-easytable',
     resourceURL : '/products',
+    height: '800px',
     actions:
       [
         {

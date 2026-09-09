@@ -2,6 +2,8 @@
 
 var gui = require ( '../../' )       // stand alone: replace with  require( 'easy-web-app' )
 
+gui.getExpress().use( '/img', require('express').static( require('path').resolve(__dirname, '..') + '/img' ) )
+
 /** Initialize the framework and the default page */
 gui.init ( 'First Example' )
 

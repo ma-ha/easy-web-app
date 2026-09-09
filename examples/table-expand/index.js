@@ -9,6 +9,8 @@ mainPage.title = 'Table Expand Demo'
 mainPage.header.logoText = 'Table Expand Demo'
 gui.getExpress().use( '/css-custom', express.static( __dirname ) )
 
+gui.getExpress().use( '/img', require('express').static( require('path').resolve(__dirname, '..') + '/img' ) )
+
 // add a view of type 'pong-easy-table' (= plug-in) 
 gui.addView( // view config
   {

@@ -5,6 +5,8 @@ var gui = require ( '../../' )       // stand alone: replace with  require( 'eas
 // initialize the web app framework and a default main page
 var page = gui.init ()
 page.header.logoText = 'Test: Table with "Feedback"'
+
+gui.getExpress().use( '/img', require('express').static( require('path').resolve(__dirname, '..') + '/img' ) )
   
 // ----------------------------------------------------------------------------
 // FEEDBACK: add the feedback module to the footer

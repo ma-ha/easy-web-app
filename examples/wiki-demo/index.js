@@ -4,6 +4,7 @@ var gui = require( '../../' )     // stand alone: replace with:  require( 'easy-
 // Initialize the framework and the default page
 var page = gui.init()
 page.header.logoText = 'Content Demo'
+gui.getExpress().use( '/img', require('express').static( require('path').resolve(__dirname, '..') + '/img' ) )
 
 page.header.modules.push( 
   { 
@@ -31,6 +32,7 @@ gui.addView(
      ,'title':'WIKI: ${page}'
      ,'type':'pong-mediawiki'
      ,"resourceURL": "http://${lang}.wikipedia.org/w/"      
+     , 'height': "700px"
      ,"actions":[
          {
            "type":"pong-help"

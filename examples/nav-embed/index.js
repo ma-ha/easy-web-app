@@ -9,6 +9,8 @@ var mainPage = gui.init ( 'Menu Demo', 8888, '/', { nav: 'embedded' }  )
 mainPage.title = 'Page ABC' // replace default = "main"
 mainPage.addView ( { id : 'PageAbc', 'height':'500px' }, null )
 
+gui.getExpress().use( '/img', require('express').static( require('path').resolve(__dirname, '..') + '/img' ) )
+
 /** Add a 2nd page page. */
 var page2 = gui.addPage( 'secondpage', 'Page XYZ',  { id:'PageXyz', 'height':'500px' }, null )
 page2.addInfo( 'New' )

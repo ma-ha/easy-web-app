@@ -27,6 +27,8 @@ var bodyParser = require( 'body-parser' )
 var jsonParser = bodyParser.json()
 var urlParser = bodyParser.urlencoded({ extended: false })
 
+gui.getExpress().use( '/img', require('express').static( require('path').resolve(__dirname, '..') + '/img' ) )
+
 // API:
 
 let mainMd = "# Title\nLorem ipsum dolor sit amet\n [[second.md]]"

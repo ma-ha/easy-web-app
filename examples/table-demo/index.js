@@ -6,6 +6,8 @@ var bodyParser  = require( 'body-parser' )
 // initialize the web app framework and a default main page
 gui.init ()
 
+gui.getExpress().use( '/img', require('express').static( require('path').resolve(__dirname, '..') + '/img' ) )
+
 // add a view of type 'pong-easy-table' (= plug-in) 
 gui.addView ( 
   // view config
@@ -13,7 +15,7 @@ gui.addView (
     'id'    : 'tableView',
     'title' : 'Table Demo (sorry, zoom is always a flower ;-)',
     'type'  : 'pong-easytable',
-    'height': '800px',
+    'height': '500px',
     'resourceURL' : '/products',
     'actions':
       [

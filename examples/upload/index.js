@@ -5,6 +5,8 @@ var fileupload = require('express-fileupload')
 var page = gui.init ()
 page.header.logoText = 'Upload Files Example'
 
+gui.getExpress().use( '/img', require('express').static( require('path').resolve(__dirname, '..') + '/img' ) )
+
 // add upload module
 gui.addView ( 
   {

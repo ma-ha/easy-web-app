@@ -13,6 +13,8 @@ gui.decor = 'tedge'
 mainPage.title = 'Complex Layout Demo'
 mainPage.header.logoText = 'Complex Layout Demo (with "tedge" theme and decor)'
 
+gui.getExpress().use( '/img', require('express').static( require('path').resolve(__dirname, '..') + '/img' ) )
+
 mainPage.addView( { 'id':'row1view', 'title':'Row 1 View', 'height':'100px' } )
 mainPage.addView( { 'id':'row2view', 'title':'Row 2 View', 'height':'100px' } )
 
