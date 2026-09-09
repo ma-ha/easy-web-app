@@ -31,6 +31,10 @@ var formParser  = bodyParser.urlencoded( { extended: true } );
 var cookieParser = require( 'cookie-parser' )
 webservices.use( cookieParser() )
 
+// CSRF protection middleware (double-submit cookie pattern)
+var csurf = require( 'csurf' )
+webservices.use( csurf( { cookie: true } ) )
+
 // support external configuration
 var config = require( 'config' )
 if ( config.staging ) { log.info( 'Web GUI', 'config stage: '+config.staging ) }
